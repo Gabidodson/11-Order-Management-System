@@ -5,6 +5,7 @@ const totalPriceElement = document.getElementById('total-price');
 const placeOrderButton = document.getElementById('place-order');
 const orderSummary = document.getElementById('order-summary');
 
+//Calculate Total Price Dynamically
 function updateTotalPrice(){
     const selectedPrice = parseFloat(productSelector.value);
     const quantity = parseInt(quantityInput.value);
@@ -15,3 +16,4 @@ productSelector.addEventListener('change', updateTotalPrice);
 quantityInput.addEventListener('input', updateTotalPrice);
 
 updateTotalPrice();
+
