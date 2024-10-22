@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Order Management</title>
+</head>
+<body>
+    <h2>Place Your Order</h2>
+<body style = "background-color: #FFC0CB;"></body>
+    <label for="product-selector">Choose a Product:</label>
+    <select id="product-selector">
+        <option value="50">Perfume - $50</option>
+        <option value="60">Flat Iron - $60</option>
+        <option value="70">Skin Care Bundle - $70</option>
+    </select>
+    
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" value="1" min="1">
+    
+    <p>Total Price: $<span id="total-price">0</span></p>
+    
+    <button id="place-order">Place Order</button>
+    
+    <p id="order-summary"></p>
+    
+    <script src="main11.js"></script>
+</body>
+</html>
